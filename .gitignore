@@ -1,5 +1,4 @@
 assets/css/*.css.map
 
 node_modules/
-assets/scss
 .sass-cache/
