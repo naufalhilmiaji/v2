@@ -16,32 +16,169 @@
                 <div class="row">
                     <div class="col text-center py-5">
                         <h1 class="header-text">Naufal Hilmiaji</h1>
-                        <strong class="header-description">A Web Developer</strong>
+                        <!-- <strong class="header-description">A Web Developer</strong> -->
                     </div>
                 </div>
             </section>
         </div>
-        <div class="parallax__group">
-            <section class="container nhj-parallax" id="about">
-                <div class="row h-100">
-                    <div class="col card">
+        <div class="parallax__group my-1">
+            <section class="container nhj-parallax" id="content">
+                <div class="row h-100 ">
+                    <div class="col card main-card">
                         <p class="header-line text-center my-3">1234567890</p>
                         <nav class="d-flex justify-content-center py-3">
-                            <ul class="nav nav-pills">
-                                <li class="nav-item mx-3"><a href="#" class="nav-link active" aria-current="page">About</a></li>
-                                <li class="nav-item mx-3"><a href="#" class="nav-link">Features</a></li>
-                                <li class="nav-item mx-3"><a href="#" class="nav-link">Pricing</a></li>
-                                <li class="nav-item mx-3"><a href="#" class="nav-link">FAQs</a></li>
-                                <li class="nav-item mx-3"><a href="#" class="nav-link">About</a></li>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item m-lg-3" role="presentation">
+                                    <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-about" type="button" role="tab"
+                                        aria-controls="pills-about" aria-selected="true">Home</button>
+                                </li>
+                                <li class="nav-item m-lg-3" role="presentation">
+                                    <button class="nav-link active" id="pills-experiences-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-experiences" type="button" role="tab"
+                                        aria-controls="pills-experiences" aria-selected="false">Experiences</button>
+                                </li>
+                                <li class="nav-item m-lg-3" role="presentation">
+                                    <button class="nav-link" id="pills-skills-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-skills" type="button" role="tab"
+                                        aria-controls="pills-skills" aria-selected="false">Skills</button>
+                                </li>
+                                <li class="nav-item m-lg-3" role="presentation">
+                                    <button class="nav-link" id="pills-portfolios-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-portfolios" type="button" role="tab"
+                                        aria-controls="pills-portfolios" aria-selected="false">Portfolios</button>
+                                </li>
                             </ul>
                         </nav>
-                        <div class="row  py-5">
-                            <div class="col-md-4 text-center">
-                                <img  src="https://source.unsplash.com/random/100×100" height="300" width="300" alt="">
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="pills-about" role="tabpanel"
+                                aria-labelledby="about-tab" tabindex="0">
+                                <div class="row p-5">
+                                    <div class="col-12 text-center px-5">
+                                        <img class="profile-img" src="./assets/img/me.jpeg" height="300" width="300"
+                                            alt="">
+                                        <!-- <img  src="https://source.unsplash.com/random/100×100" height="300" width="300" alt=""> -->
+                                    </div>
+                                </div>
+                                <div class="row px-5">
+                                    <div class="col-md-4 mx-auto px-5" id="contact-info">
+                                        <div class="contact mb-3">
+                                            <h3 class="nhj-text-bold"><b>Contact</b></h3>
+                                            <hr>
+                                            <div class="row contact-item fs-5">
+                                                <div class="col-2"><i class="bi bi-whatsapp"></i></div>
+                                                <div class="col-10">081285244060</div>
+                                            </div>
+                                            <div class="row contact-item fs-5">
+                                                <div class="col-2"><i class="bi bi-google"></i></div>
+                                                <div class="col-10">nhilmiaji@gmail.com</div>
+                                            </div>
+                                        </div>
+                                        <div class="socials mb-3">
+                                            <h3 class="nhj-text-bold"><b>Socials</b></h3>
+                                            <hr>
+                                            
+                                            <div class="row socials-item">
+                                                <div class="col-2">
+                                                    <a href="https://www.linkedin.com/in/naufalhilmiaji/">
+                                                        <i class="bi bi-linkedin"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-2">
+                                                    <a href="https://www.github.com/naufalhilmiaji/">
+                                                        <i class="bi bi-github"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="col-2">
+                                                    <a href="https://www.instagram.com/naufalhilmiaji/">
+                                                        <i class="bi bi-instagram"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8" id="summary">
+                                        <div class="row">
+                                            <div class="col-12 card bg-primary text-light border-0 py-3"
+                                                 id="summary-info">
+                                                <h3><b>Summary</b></h3>
+                                                <p>I'm a diligent software engineer with four-year computer science
+                                                    degree and
+                                                    more than a year professional working experience. I'm interested in
+                                                    developing website applications and data science, and I'm motivated
+                                                    to
+                                                    expand my skills not only in programming-related field, but also in
+                                                    advanced working environment. A leader and an innovative person,
+                                                    also firm with deadlines. To be a loyal person means availability
+                                                    and time adjustments are my top priority.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <h3><b>Naufal Hilmiaji</b></h3>
+                            <div class="tab-pane fade show active" id="pills-experiences" role="tabpanel"
+                                aria-labelledby="pills-experiences-tab" tabindex="0">
+                                <div class="row p-5">
+                                    <div class="col-md-12 card border-primary mb-3 px-5 py-3">
+                                        <div class="job-header mb-3">
+                                            <h3 class="nhj-text-bold text-center"><b>Current Company</b></h3>
+                                            <h5 class="nhj-text-bold">PT. Perusahaan Gas Negara, Tbk.</h5>
+                                            <strong>August 2022 - now</strong>
+                                        </div>
+                                        <div class="job-description">
+                                            <div class="row">
+                                                <div class="col-md-6 desc">
+                                                    <h5 class="nhj-text text-center mb-3">Job Responsibilities</h5>
+                                                    <ul>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6 desc">
+                                                    <h5 class="nhj-text text-center mb-3">Internal Projects</h5>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h5 class="nhj-text-bold">Assignment</h5>
+                                                            <p>Employees Activity Monitoring System</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <h5 class="nhj-text-bold">RAMEN</h5>
+                                                            <p>Report and Asset Management</p>
+                                                        </div>
+                                                        <div class="col-12 mb-2">
+                                                            <h5 class="nhj-text-bold">INSAN</h5>
+                                                            <p>Inventory, Sparepart, and Asset Management</p>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <ul>
+                                                                <li>
+                                                                    <img src="./assets/img/logos/php.png" alt="" width="75px">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="./assets/img/logos/ci.png" alt="" width="130px">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="./assets/img/logos/sqlsrv.png" alt="" width="125px">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row p-5">
+                                    <div class="col-md-6"></div>
+                                    <div class="col-md-6"></div>
+                                </div>
                             </div>
+                            <div class="tab-pane fade" id="pills-skills" role="tabpanel"
+                                aria-labelledby="pills-skills-tab" tabindex="0">Test 3</div>
+                            <div class="tab-pane fade" id="pills-portfolios" role="tabpanel"
+                                aria-labelledby="pills-portfolios-tab" tabindex="0">Test 4</div>
                         </div>
                     </div>
                 </div>
@@ -49,5 +186,12 @@
         </div>
     </div>
 </body>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+<script>
+
+</script>
 
 </html>

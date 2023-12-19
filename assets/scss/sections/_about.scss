@@ -1,12 +1,13 @@
-section#about {
-    height: 100vh;
-
-    .card {
-        border-radius: 2rem 2rem 0 0;
+#pills-about {
+    #contact-info, #summary-info {
+        height: 300px;
     }
 
-    .header-line {
-        font-family: 'Flow Rounded';
-        color: rgb(137, 135, 135);
+    #summary-info {
+        height: 300px;
+        
+        p {
+            text-align: justify;
+        }
     }
 }

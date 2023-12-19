@@ -1,3 +1,27 @@
+.nhj-text {
+    color: $primary;
+}
+
+.nhj-text-bold {
+    color: $primary;
+    font-weight: 700;
+}
+
+.nhj-links {
+    color: $primary;
+    text-decoration: none;
+}
+
+.socials-item > div {
+    font-size: 20px;
+
+    &:hover {
+        font-size: 22px;
+        color: darken($primary, 10%);
+        cursor: pointer;
+    }
+}
+
 $font-family-sans-serif: 'Lato', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Flow+Rounded&family=Lato:wght@300;400;700;900&display=swap');
