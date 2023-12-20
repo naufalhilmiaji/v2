@@ -21,7 +21,7 @@
                 </div>
             </section>
         </div>
-        <div class="parallax__group my-1">
+        <div class="parallax__group">
             <section class="container nhj-parallax" id="content">
                 <div class="row h-100 ">
                     <div class="col card main-card">
@@ -29,12 +29,12 @@
                         <nav class="d-flex justify-content-center py-3">
                             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                                 <li class="nav-item m-lg-3" role="presentation">
-                                    <button class="nav-link active" id="pills-about-tab" data-bs-toggle="pill"
+                                    <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-about" type="button" role="tab"
-                                        aria-controls="pills-about" aria-selected="true">Home</button>
+                                        aria-controls="pills-about" aria-selected="true">About Me</button>
                                 </li>
                                 <li class="nav-item m-lg-3" role="presentation">
-                                    <button class="nav-link" id="pills-experiences-tab" data-bs-toggle="pill"
+                                    <button class="nav-link active" id="pills-experiences-tab" data-bs-toggle="pill"
                                         data-bs-target="#pills-experiences" type="button" role="tab"
                                         aria-controls="pills-experiences" aria-selected="false">Experiences</button>
                                 </li>
@@ -48,121 +48,157 @@
                                         data-bs-target="#pills-portfolios" type="button" role="tab"
                                         aria-controls="pills-portfolios" aria-selected="false">Portfolios</button>
                                 </li>
+                                <li class="nav-item m-lg-3" role="presentation">
+                                    <button class="nav-link" id="pills-extras-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-extras" type="button" role="tab"
+                                        aria-controls="pills-extras" aria-selected="false">Extras</button>
+                                </li>
                             </ul>
                         </nav>
 
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="pills-about" role="tabpanel"
-                                aria-labelledby="about-tab" tabindex="0">
-                                <div class="row p-5">
-                                    <div class="col-12 text-center px-5">
-                                        <img class="profile-img" src="./assets/img/me.jpeg" height="300" width="300"
-                                            alt="">
-                                        <!-- <img  src="https://source.unsplash.com/random/100×100" height="300" width="300" alt=""> -->
-                                    </div>
-                                </div>
-                                <div class="row px-5">
-                                    <div class="col-md-4 mx-auto px-5" id="contact-info">
-                                        <div class="contact mb-3">
-                                            <h3 class="nhj-text-bold"><b>Contact</b></h3>
-                                            <hr>
-                                            <div class="row contact-item fs-5">
-                                                <div class="col-2"><i class="bi bi-whatsapp"></i></div>
-                                                <div class="col-10">081285244060</div>
-                                            </div>
-                                            <div class="row contact-item fs-5">
-                                                <div class="col-2"><i class="bi bi-google"></i></div>
-                                                <div class="col-10">nhilmiaji@gmail.com</div>
-                                            </div>
-                                        </div>
-                                        <div class="socials mb-3">
-                                            <h3 class="nhj-text-bold"><b>Socials</b></h3>
-                                            <hr>
-                                            
-                                            <div class="row socials-item">
-                                                <div class="col-2">
-                                                    <a href="https://www.linkedin.com/in/naufalhilmiaji/">
-                                                        <i class="bi bi-linkedin"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-2">
-                                                    <a href="https://www.github.com/naufalhilmiaji/">
-                                                        <i class="bi bi-github"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="col-2">
-                                                    <a href="https://www.instagram.com/naufalhilmiaji/">
-                                                        <i class="bi bi-instagram"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
+                        <div class="tab-content overflow-y-auto overflow-x-auto about">
+                            <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="about-tab"
+                                tabindex="0">
+                                <div class="container">
+                                    <div class="row px-lg-5 px-2 py-2 mb-3">
+                                        <div class="col-12 text-center">
+                                            <img class="profile-img" src="./assets/img/me.jpeg" height="300" width="300"
+                                                alt="">
                                         </div>
                                     </div>
-                                    <div class="col-md-8" id="summary">
-                                        <div class="row">
-                                            <div class="col-12 card bg-primary text-light border-0 py-3"
-                                                 id="summary-info">
-                                                <h3><b>Summary</b></h3>
-                                                <p>I'm a diligent software engineer with four-year computer science
-                                                    degree and
-                                                    more than a year professional working experience. I'm interested in
-                                                    developing website applications and data science, and I'm motivated
-                                                    to
-                                                    expand my skills not only in programming-related field, but also in
-                                                    advanced working environment. A leader and an innovative person,
-                                                    also firm with deadlines. To be a loyal person means availability
-                                                    and time adjustments are my top priority.</p>
+                                    <div class="row px-lg-5 px-2 py-2">
+                                        <div class="col-md-4 mx-auto" id="contact-info">
+                                            <div class="contact mb-3">
+                                                <h3 class="nhj-text-bold"><b>Contact</b></h3>
+                                                <hr>
+                                                <div class="row contact-item fs-5">
+                                                    <div class="col-2"><i class="bi bi-whatsapp"></i></div>
+                                                    <div class="col-10">081285244060</div>
+                                                </div>
+                                                <div class="row contact-item fs-5">
+                                                    <div class="col-2"><i class="bi bi-google"></i></div>
+                                                    <div class="col-10">nhilmiaji@gmail.com</div>
+                                                </div>
+                                            </div>
+                                            <div class="socials mb-3">
+                                                <h3 class="nhj-text-bold"><b>Socials</b></h3>
+                                                <hr>
+
+                                                <div class="row socials-item">
+                                                    <div class="col-2">
+                                                        <a href="https://www.linkedin.com/in/naufalhilmiaji/">
+                                                            <i class="bi bi-linkedin"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a href="https://www.github.com/naufalhilmiaji/">
+                                                            <i class="bi bi-github"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <a href="https://www.instagram.com/naufalhilmiaji/">
+                                                            <i class="bi bi-instagram"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8" id="summary">
+                                            <div class="row">
+                                                <div class="col-12 card bg-primary text-light border-0 p-3 overflow-y-auto"
+                                                    id="summary-info">
+                                                    <h3><b>Summary</b></h3>
+                                                    <p>I'm a diligent software engineer with four-year computer science
+                                                        degree and
+                                                        more than a year professional working experience. I'm interested
+                                                        in
+                                                        developing website applications and data science, and I'm
+                                                        motivated
+                                                        to
+                                                        expand my skills not only in programming-related field, but also
+                                                        in
+                                                        advanced working environment. A leader and an innovative person,
+                                                        also firm with deadlines. To be a loyal person means
+                                                        availability
+                                                        and time adjustments are my top priority.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="pills-experiences" role="tabpanel"
+                            <div class="tab-pane fade show active" id="pills-experiences" role="tabpanel"
                                 aria-labelledby="pills-experiences-tab" tabindex="0">
-                                <div class="row p-5">
-                                    <div class="col-md-12 card border-primary mb-3 px-5 py-3">
-                                        <div class="job-header mb-3">
-                                            <h3 class="nhj-text-bold text-center"><b>Current Company</b></h3>
-                                            <h5 class="nhj-text-bold">PT. Perusahaan Gas Negara, Tbk.</h5>
-                                            <strong>August 2022 - now</strong>
-                                        </div>
-                                        <div class="job-description">
-                                            <div class="row">
-                                                <div class="col-md-6 desc">
-                                                    <h5 class="nhj-text text-center mb-3">Job Responsibilities</h5>
-                                                    <ul>
-                                                        <li></li>
-                                                        <li></li>
-                                                        <li></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6 desc">
-                                                    <h5 class="nhj-text text-center mb-3">Internal Projects</h5>
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <h5 class="nhj-text-bold">Assignment</h5>
-                                                            <p>Employees Activity Monitoring System</p>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <h5 class="nhj-text-bold">RAMEN</h5>
-                                                            <p>Report and Asset Management</p>
-                                                        </div>
-                                                        <div class="col-12 mb-2">
-                                                            <h5 class="nhj-text-bold">INSAN</h5>
-                                                            <p>Inventory, Sparepart, and Asset Management</p>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <ul>
-                                                                <li>
-                                                                    <img src="./assets/img/logos/php.png" alt="" width="75px">
-                                                                </li>
-                                                                <li>
-                                                                    <img src="./assets/img/logos/ci.png" alt="" width="130px">
-                                                                </li>
-                                                                <li>
-                                                                    <img src="./assets/img/logos/sqlsrv.png" alt="" width="125px">
-                                                                </li>
-                                                            </ul>
+                                <div class="row mx-lg-3 mx-0 mb-3">
+                                    <div class="col-md-12">
+                                        <div class="card border-primary p-3">
+                                            <div class="job-header mb-3">
+                                                <h3 class="nhj-text-bold text-center"><b>Current Company</b></h3>
+                                                <h4 class="nhj-text-bold">PT. PGAS Telekomunikasi Nusantara</h4>
+                                                <h5 class="nhj-text">Web Developer</h5>
+                                                <strong><b>August 2022</b></strong>
+                                            </div>
+                                            <div class="job-description">
+                                                <div class="row">
+                                                    <div class="col-md-6 resp">
+                                                        <h5 class="nhj-text-bold text-center mb-3">Job Responsibilities
+                                                        </h5>
+                                                        <ul>
+                                                            <li>Complete detailed programming in web development,
+                                                                including front-end
+                                                                and back-end</li>
+                                                            <li>Develop the company’s existing web-based applications
+                                                                based on the
+                                                                requirements provided by the users.</li>
+                                                            <li>Implement the workflow designed by the users into the
+                                                                system and ensure
+                                                                the system works effectively and sufficiently,
+                                                                considering the limited server resources.</li>
+                                                            <li>Develop and maintain the company’s database management
+                                                                system.</li>
+                                                            <li>Write documentation of applications that have been
+                                                                developed, such as user guide document.</li>
+                                                            <li>Responsible for broadcasting daily reports of the
+                                                                metering status of
+                                                                SCADA instruments of the company’s Pipeline Management
+                                                                System (PMS).</li>
+                                                            <li>Responsible for being a liaison between the company and
+                                                                the client in a PMS-related
+                                                                working environment.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-md-6 desc">
+                                                        <h5 class="nhj-text-bold text-center mb-3">Internal Projects
+                                                        </h5>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="nhj-text">Assignment</h5>
+                                                                <p>Employees Activity Monitoring System</p>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h5 class="nhj-text">RAMEN</h5>
+                                                                <p>Report and Asset Management</p>
+                                                            </div>
+                                                            <div class="col-12 mb-2">
+                                                                <h5 class="nhj-text">INSAN</h5>
+                                                                <p>Inventory, Sparepart, and Asset Management</p>
+                                                            </div>
+                                                            <div class="col-12 d-lg-block d-none">
+                                                                <ul class="d-flex justify-content-center">
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/php.png" alt=""
+                                                                            width="75px">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/ci.png" alt=""
+                                                                            width="130px">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/sqlsrv.png" alt=""
+                                                                            width="125px">
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -170,9 +206,132 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row p-5">
-                                    <div class="col-md-6"></div>
-                                    <div class="col-md-6"></div>
+                                <div class="row mx-lg-3 my-3 gy-lg-0 gy-3">
+                                    <div class="col-md-6">
+                                        <div class="card border-primary p-3 h-100">
+                                            <div class="job-header mb-3">
+                                                <h4 class="nhj-text-bold">PT. Stampindo Lancar Jaya<br></h4>
+                                                <h5 class="nhj-text">Backend Developer</h5>
+                                                <strong>03/2022 - 05/2022</strong>
+                                            </div>
+                                            <div class="job-description">
+                                                <div class="row">
+                                                    <div class="col-md-12 resp">
+                                                        <h5 class="nhj-text-bold text-center mb-3">Job Responsibilities
+                                                        </h5>
+                                                        <ul>
+                                                            <li>Build clients’ applications based on the requirements
+                                                                provided.</li>
+                                                            <li>Develop and maintain APIs integrated with the company’s
+                                                                application.</li>
+                                                            <li>Discuss with the team on how to solve some issues
+                                                                related to the company’s projects.</li>
+                                                            <li>Write clean and tidy codes based on the standards
+                                                                provided by the company.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 desc">
+                                                        <h5 class="nhj-text-bold text-center mb-3">Internal Projects
+                                                        </h5>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="nhj-text">Customer Relationship Management
+                                                                </h5>
+                                                                <p>Manage and analyze customer’s life cycle data to
+                                                                    increase loyalty, engagement, and revenue.</p>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h5 class="nhj-text">Order Management System</h5>
+                                                                <p>The ordering system to streamline your operations.
+                                                                    Integrates with marketplaces & food aggregators.</p>
+                                                            </div>
+                                                            <div class="col-12 d-lg-block d-none">
+                                                                <ul class="d-flex justify-content-center">
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/python.png" alt=""
+                                                                            width="130px">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/django.png" alt=""
+                                                                            width="130px">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/pgsql.png" alt=""
+                                                                            width="125px">
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card border-primary p-3 h-100">
+                                            <div class="job-header mb-3">
+                                                <h4 class="nhj-text-bold">PT. Mitracomm Ekasarana<br></h4>
+                                                <h5 class="nhj-text">Full Stack Web Developer</h5>
+                                                <strong>06/2020 - 08/2020</strong>
+                                            </div>
+                                            <div class="job-description">
+                                                <div class="row">
+                                                    <div class="col-md-12 resp">
+                                                        <h5 class="nhj-text-bold text-center mb-3">Job Responsibilities
+                                                        </h5>
+                                                        <ul>
+                                                            <li>Cooperate with programmers to create clean interfaces
+                                                                and simple, intuitive interactions, and experiences.
+                                                            </li>
+                                                            <li>Develop project concepts and maintain optimal
+                                                                workflow.</li>
+                                                            <li>Work with senior developers to manage large projects
+                                                                for the internal members of the company.</li>
+                                                            <li>Complete detailed programming and development tasks of
+                                                                the front-end user interface for internal applications
+                                                                as well as challenging back-end server management.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 desc">
+                                                        <h5 class="nhj-text-bold text-center mb-3">Internal Projects
+                                                        </h5>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <h5 class="nhj-text">Meeting Room Reservation System
+                                                                </h5>
+                                                                <p>Develop an internal system to help employees reserve room for meeting.</p>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <h5 class="nhj-text">Order Management System</h5>
+                                                                <p>The ordering system to streamline your operations.
+                                                                    Integrates with marketplaces & food aggregators.</p>
+                                                            </div>
+                                                            <div class="col-12 d-lg-block d-none">
+                                                                <ul class="d-flex justify-content-center">
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/php.png" alt=""
+                                                                            width="75px">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/laravel.png" alt=""
+                                                                            width="130px">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="./assets/img/logos/sqlsrv.png" alt=""
+                                                                            width="125px">
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-skills" role="tabpanel"
