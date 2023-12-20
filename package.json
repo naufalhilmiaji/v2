@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch assets/scss:assets/css --style compressed"
+    "compile:sass": "sass --watch scss:assets/css --style compressed"
   },
   "repository": {
     "type": "git",
