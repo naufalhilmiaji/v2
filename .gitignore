@@ -2,4 +2,3 @@ assets/css/*.css.map
 
 node_modules/
 .sass-cache/
-scss/

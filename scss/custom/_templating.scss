@@ -1,0 +1,29 @@
+/* ===== Scrollbar CSS ===== */
+
+@media screen and (min-width: 768px) {
+
+    /* Firefox */
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #11B0CE #ffffff;
+    }
+
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+        width: 16px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #11B0CE;
+        border-radius: 5rem;
+        border: none;
+    }
+}
+
+.profile-img {
+    border-radius: 50%;
+}

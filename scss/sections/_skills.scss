@@ -1,0 +1,18 @@
+#pills-skills {
+    .skill {
+        margin: 1rem 0;
+    }
+
+    .progress-body {
+        width: 100%;
+        background-color: #ddd;
+        border-radius: 0.5rem;
+
+        .progress-bar {
+            width: 3%;
+            height: 30px;
+            background-color: $primary;
+            border-radius: 0.5rem;
+        }
+    }
+}
